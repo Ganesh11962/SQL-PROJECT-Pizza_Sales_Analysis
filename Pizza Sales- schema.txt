@@ -1,0 +1,7 @@
+Order_Details(order_detail_id, order_id, pizza_id, quantity)
+|
+|---Orders(order_id, date, time)
+|
+|---Pizzas(pizza_id, pizza_type, size, price)
+|   |
+    |---Pizza_Types(pizza_type, name, category, ingredients)
