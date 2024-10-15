@@ -1,0 +1,23 @@
+create table order_details(
+order_details_id int primary key,
+order_id int,
+pizza_id varchar,
+quantity int);
+
+create table orders(
+order_id int primary key,
+date Date,
+time timestamp);
+
+create table pizza_types(
+pizza_type_id varchar,
+name varchar not null,
+category varchar not null,
+ingredients varchar not null);
+
+
+create table pizzas(
+pizza_id varchar primary key,
+pizza_type_id varchar not null,
+size char,
+price float not null);
